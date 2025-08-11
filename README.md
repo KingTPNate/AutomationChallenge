@@ -32,6 +32,8 @@ Run these commands to install the CLI tool and the browser dependencies:
 dotnet tool install --global Microsoft.Playwright.CLI
 playwright install
 
+---
+
 3. Set Environment Variables
 
 Set the following in the Shell:
