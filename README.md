@@ -37,8 +37,11 @@ Run these commands to install the CLI tool and the browser dependencies:
 Set the following in your shell or PowerShell session:
 
    $env:USERNAME="your_username_or_email"
+
    $env:PASSWORD="your_password"
+
    $env:GITHUB_2FA_CODE="123456"
+
    $env:NEW_BIO="Your new bio text here"
 
 Note:
