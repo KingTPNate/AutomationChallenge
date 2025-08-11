@@ -1,6 +1,6 @@
 # 🚀 AutomationChallenge
 
-AutomationChallenge is a C# console app using [Microsoft.Playwright](https://playwright.dev/dotnet/) to automate updating your GitHub profile bio, including 2FA login handling.
+AutomationChallenge is a C# console app using Microsoft.Playwright to automate updating your GitHub profile bio, including 2FA login handling.
 
 ---
 
@@ -8,7 +8,7 @@ AutomationChallenge is a C# console app using [Microsoft.Playwright](https://pla
 
 Before running the app, ensure you have:
 
-- 🧰 [.NET 7.0 SDK or later](https://dotnet.microsoft.com/en-us/download)
+- 🧰 .NET 7.0 SDK or later (https://dotnet.microsoft.com/en-us/download)
 - 🎭 Microsoft.Playwright package installed
 - 🌐 Chromium browser (installed automatically by Playwright)
 
@@ -16,7 +16,6 @@ Before running the app, ensure you have:
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/yourusername/AutomationChallenge.git
    cd AutomationChallenge
 
@@ -28,25 +27,30 @@ Microsoft.Playwright requires both the .NET package and browser binaries (Chromi
 
 Run these commands to install the CLI tool and the browser dependencies:
 
-```bash
-dotnet tool install --global Microsoft.Playwright.CLI
-playwright install
+   dotnet tool install --global Microsoft.Playwright.CLI
+   playwright install
 
 ---
 
 3. Set Environment Variables
 
-Set the following in the Shell:
-    $env:USERNAME="your_username_or_email"
-    $env:PASSWORD="your_password"
-    $env:GITHUB_2FA_CODE="123456"
-    $env:NEW_BIO="Your new bio text here"
+Set the following in your shell or PowerShell session:
 
-Note: For the 2FA if on timer make sure timer is refreshed to new code for proper.
-Note: Make sure Github isnt linked to google else wont work.
+   $env:USERNAME="your_username_or_email"
+   $env:PASSWORD="your_password"
+   $env:GITHUB_2FA_CODE="123456"
+   $env:NEW_BIO="Your new bio text here"
+
+Note:
+- For 2FA, if the code timer expires, refresh to get a new valid code before running.
+- Make sure your GitHub account is not linked to Google OAuth login; this automation does not handle Google logins.
 
 ---
 
-4. Run
+4. Run the application:
 
-dotnet run
+   dotnet run
+
+---
+
+**Default Note:**  
