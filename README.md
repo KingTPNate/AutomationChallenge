@@ -51,6 +51,3 @@ Note:
 
    dotnet run
 
----
-
-**Default Note:**  
